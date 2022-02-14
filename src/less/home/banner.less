@@ -12,7 +12,7 @@
     > img {
         width: 100%;
         display: block;
-        object-fit: content;
+        object-fit: cover;
         object-position: center;
     }
 
@@ -35,5 +35,41 @@
 
     .btn {
         margin-right: 24px;
+    }
+}
+
+@media (max-width: 768.98px) {
+    .banner {
+        > img {
+            min-height: 520px;
+        }
+        &::before {
+ 
+        }
+        > img {
+
+        }
+    
+        &__inner {
+            bottom: 11.666%;
+        }
+    
+        &__title {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+        .list-button {
+            display: flex;
+            justify-content: center;
+        }
+        .btn {
+            max-width: calc(50% - 12px);
+            padding: 12px 24px;
+            margin: 0;
+            white-space: normal;
+            &:first-child {
+                margin-right: 24px;
+            }
+        }
     }
 }
