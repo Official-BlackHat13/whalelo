@@ -1,0 +1,97 @@
+.pricing {
+    background-image: url('../../src/image/bg_pricing.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 52px;
+    padding-bottom: 58px;
+    &__title {
+        color: white;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 58px;
+        text-align: center;
+        margin-bottom: 44px;
+    }
+
+    &__item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+
+        padding: 24px;
+        padding-bottom: 0;
+
+        .discount {
+            font-size: 18px;
+            line-height: 26px;
+            opacity: 0.5;
+            line-height:26px;
+        }
+        .table {
+            margin-bottom: 0;
+
+            thead th {
+                border-top: unset;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                border-bottom:  unset;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            tbody td {
+                border-top: 1px solid #C4C4C4;
+                padding: 12px 20px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 35px;
+                vertical-align: middle;
+
+                > div {
+                    min-height: 61px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+            .pricing__price {
+                font-weight: bold;
+                text-align: end;
+            }
+        }
+        &--title {
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 47px;
+        }
+    }
+    &__detail {
+        font-size: 18px;
+        line-height: 26px;
+        color: #002C51;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    &__bottom {
+        text-align: center;
+        background: linear-gradient(93.49deg, #FFC600 -52.75%, #FD6E6A 98.98%);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-top: 30px;
+        padding: 12px 24px;
+        p {
+            margin: 0;
+            color: white;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
