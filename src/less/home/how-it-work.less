@@ -25,5 +25,44 @@
             line-height: 35px;
             margin-top: 24px;
         }
+
+        a {
+            color: #3B4EDC;
+            text-decoration:underline;
+        }
+    }
+}
+
+@media (max-width: 768.98px) {
+    .how-it-work {
+        padding-top: 33px;
+        padding-bottom: 12px;
+        &__title {
+            font-size: 32px;
+            line-height: 47px;
+            margin-bottom: 30px;
+        }
+        &__list {
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 32px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            img {
+                align-items: flex-start;
+                max-width: 48px;
+            }
+    
+            p {
+                margin: unset;
+                margin-left: 16px;
+            }
+    
+            a {
+
+            }
+        }
     }
 }
