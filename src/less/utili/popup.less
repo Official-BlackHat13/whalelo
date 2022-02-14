@@ -1,0 +1,78 @@
+.popup {
+    &__bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        border-radius: 10px;
+        background-color: white;
+        padding: 50px;
+
+        &.lg {
+            min-width: 1366px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        &.md {
+            min-width: 767px;
+        }
+
+        &.sm {
+            min-width: 548px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+.progress.custom {
+    background: unset;
+    position: relative;
+    height: 24px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        border-top: 1px dashed #818190;
+    }
+    
+    .progress__node {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        border-radius: 100%;
+        border: 1px solid currentColor;
+        background-color: white;
+        color: #818190;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: currentColor;
+        }
+    }
+
+    .progress__end {
+        right: 0;
+        left: unset;
+    }
+}
