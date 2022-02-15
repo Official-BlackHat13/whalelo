@@ -30,6 +30,9 @@
                         <li><a href="./">Pricing</a></li>
                     </ul>
                 </div>
+                <div class="header__hamburger">
+                    <span class="header__hamburger--item"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -72,91 +75,103 @@
     <div class="pricing">
        <div class="container">
             <h2 class="pricing__title">Pricing</h2>
-            <div class="row pricing__body">
-                <div class="col-6">
-                    <div class="pricing__item">
-                        <h3 class="pricing__item--title">
-                            Hourly rate
-                        </h3>
-                        <p class="pricing__detail">Price per Item with size bigger than <strong>40 x 30 x 10 (cm)</strong></p>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>Hours</th>
-                                <th class="pricing__price">Price</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="pricing__time"><div><span>1 - 6 hours</span></div></td>
-                                <td class="pricing__price"><div><span>60,000 đ</span></div></td>
-                            </tr>
-                            <tr>
-                                <td class="pricing__time"><div><span>6 - 12 hours</span></div></td>
-                                <td class="pricing__price"><div><span>80,000 đ</span></div></td>
-                            </tr>
-                            <tr>
-                                <td class="pricing__time"><div><span>12 - 24 hours</span></div></td>
-                                <td class="pricing__price"><div><span>100,000 đ</span></div></td>
-                            </tr>
-                            </tbody>
-                        </table>
+            <div class="pricing__body">
+                <div class="pricing__tab col">
+                    <ul class="pricing__tab--header">
+                        <li class="pricing__title active noselect" data-target="hourly-rate">Hourly rate</li>
+                        <li class="pricing__title noselect" data-target="daily-rates">Daily rates</li>
+                    </ul>
+                </div>
+                <div class="row pricing__tab--item">
+                    <div class="col-md-6 col active pricing__tab--content" data-tab="hourly-rate">
+                        <div class="pricing__item">
+                            <h3 class="pricing__item--title">
+                                Hourly rate
+                            </h3>
+                            <p class="pricing__detail">Price per Item with size bigger than <strong>40 x 30 x 10 (cm)</strong></p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Hours</th>
+                                    <th class="pricing__price">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="pricing__time"><div><span>1 - 6 hours</span></div></td>
+                                    <td class="pricing__price"><div><span>60,000 đ</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td class="pricing__time"><div><span>6 - 12 hours</span></div></td>
+                                    <td class="pricing__price"><div><span>80,000 đ</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td class="pricing__time"><div><span>12 - 24 hours</span></div></td>
+                                    <td class="pricing__price"><div><span>100,000 đ</span></div></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col pricing__tab--content" data-tab="daily-rates">
+                        <div class="pricing__item">
+                            <h3 class="pricing__item--title">
+                                Daily rates
+                            </h3>
+                            <p class="pricing__detail">Daily rates <strong>Number of days x 100,000 đ</strong></p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th class="pricing__price">Price from</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="pricing__time">
+                                        <div><span>1 - 6 hours</span></div>
+                                    </td>
+                                    <td class="pricing__price">
+                                        <div>
+                                            <span>60,000 đ</span> <span class="discount">(15% discount)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pricing__time">
+                                        <span>
+                                            6 - 12 hours
+                                        </span>
+                                    </td>
+                                    <td class="pricing__price">
+                                        <div>
+                                            <span>80,000 đ</span> <span class="discount">(30% discount)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pricing__time">
+                                        <div>
+                                            <span>12 - 24 hours</span>
+                                        </div>
+                                    </td>
+                                    <td class="pricing__price">
+                                        <div>
+                                            <span>100,000 đ</span> <span class="discount">(50% discount)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="pricing__item">
-                        <h3 class="pricing__item--title">
-                            Daily rates
-                        </h3>
-                        <p class="pricing__detail">Daily rates <strong>Number of days x 100,000 đ</strong></p>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th class="pricing__price">Price from</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="pricing__time">
-                                    <div><span>1 - 6 hours</span></div>
-                                </td>
-                                <td class="pricing__price">
-                                    <div>
-                                        <span>60,000 đ</span> <span class="discount">(15% discount)</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="pricing__time">
-                                    <span>
-                                        6 - 12 hours
-                                    </span>
-                                </td>
-                                <td class="pricing__price">
-                                    <div>
-                                        <span>80,000 đ</span> <span class="discount">(30% discount)</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="pricing__time">
-                                    <div>
-                                        <span>12 - 24 hours</span>
-                                    </div>
-                                </td>
-                                <td class="pricing__price">
-                                    <div>
-                                        <span>100,000 đ</span> <span class="discount">(50% discount)</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+                <div class="pricing__mobile pricing__discount">
+                    <p>We discount 50% for items with size from <strong>40 x 30 x 10 (cm)</strong> and smaller</p>
                 </div>
             </div>
-            <div class="pricing__bottom">
+            <div class="pricing__bottom pricing__discount">
                 <p>We discount 50% for items with size from <strong>40 x 30 x 10 (cm)</strong> and smaller</p>
             </div>
        </div>

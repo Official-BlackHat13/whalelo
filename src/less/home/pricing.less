@@ -78,12 +78,11 @@
         margin-bottom: 24px;
         text-align: center;
     }
-    &__bottom {
+    &__discount {
         text-align: center;
         background: linear-gradient(93.49deg, #FFC600 -52.75%, #FD6E6A 98.98%);
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        margin-top: 30px;
         padding: 12px 24px;
         p {
             margin: 0;
@@ -92,6 +91,109 @@
             font-weight: normal;
             font-size: 18px;
             line-height: 26px;
+        }
+    }
+    &__bottom {
+        margin-top: 30px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .pricing {
+        &__body {
+            background-color: white;
+            border-radius: 4px;
+
+            .pricing__mobile {
+                
+            }
+        }
+        &__item {
+            box-shadow: unset;
+            &--title {
+                display: none;
+            }
+            .discount {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .table {
+                thead th {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 23px;
+                    padding-bottom: 12px;
+                }
+
+                tbody td {
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 6px 16px;
+                    > div {
+                        min-height: 38px;
+                    }
+                }
+            }
+        }
+
+        &__detail {
+            font-size: 16px;
+            line-height: 23px;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            &.active {
+                color: rgba(0, 0, 0, 0.85);
+            }
+            color: rgba(0, 0, 0, 0.25);
+        }
+        &__tab {
+            border-bottom: 1px solid #C4C4C4;
+            padding: 0;
+            &--header {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                
+                li {
+                    max-width: 50%;
+                    flex-basis: 50%;
+                    margin-bottom: unset;
+                    padding-bottom: 10px;
+                    position: relative;
+                    cursor: pointer;
+                    padding-top: 16px;
+                    
+                    &.active {
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            position: absolute;
+                            bottom: 0;
+                            background-color: #3B4EDC
+                        }
+                    }
+                }
+            }
+            &--item {
+                box-shadow: unset;
+            }
+
+            &--content {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
         }
     }
 }
