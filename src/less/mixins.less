@@ -154,25 +154,31 @@ body {
             &:before {
                 content: '';
                 display: block;
-                width: 1.25em;
-                height: 1.25em;
-                border: 1px solid #818190;
+                width: 20px;
+                height: 20px;
                 position: absolute;
-                left: 0;
-                top: 0;
+                left: 10px;
+                top: 10px;
+                transform: translate(-50%, -50%); 
+                background-image: url('../image/radio_outline.svg');
+                background-position: center;
+                background-size: cover;
+                z-index: 1;
             }
 
             &:after {
                 content: '';
                 display: block;
-                background-color: #009CDC;
                 position: absolute;
-                left: calc(1.25em / 2);
-                top: calc(1.25em / 2);
+                left: 10px;
+                top: 10px;
+                transform: translate(-50%, -50%); 
                 width: 0;
                 height: 0;
-                transform: translate(-50%, -50%);
-                transition: all 0.05s ease-in-out;
+                transition: width 0.05s ease-in-out, height 0.05s ease-in-out;
+                background-image: url('../image/radio_inner.svg');
+                background-position: center;
+                background-size: cover;
             }
         }
 
@@ -181,19 +187,19 @@ body {
                 border-color: #009CDC;
             }
             &:after {
-                width: .8em;
-                height: .8em;
+                width: 20px;
+                height: 20px;
             }
         }
     }
 
-    input[type="radio"] {
+    input[type="checkbox"] {
         & + span {
             &:before {
-                border-radius: 100%;
+                background-image: url('../image/checkbox_outline.svg');
             }
             &:after {
-                border-radius: 100%;
+                background-image: url('../image/checkbox_inner.svg');
             }
         }
     }
