@@ -15,8 +15,9 @@
 </head>
 <body>
     <!-- start body -->
-    <div class="popup">
-        <div class="popup__bg" data-close>
+    <div class="popup" id="popup1">
+        <div class="popup__wrap">
+            <div class="popup__bg" data-close-popup></div>
             <div class="popup__content sm">
                     <div class="popup__status">
                         <div class="popup__status--title">
@@ -24,13 +25,15 @@
                         </div>
                         <div class="popup__status--btn">
                             <button type="button" class="btn btn-outline-primary">Đồng ý</button>
-                            <button type="button" class="btn btn-outline-danger">Hủy</button>
+                            <button type="button" class="btn btn-outline-danger" data-close-popup>Hủy</button>
                         </div>
                     </div>
             </div>
         </div>
     </div>
-
+    <button data-target="#popup1" class="btn btn-success showpopup">
+        show popup
+    </button>
     <!-- end body -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

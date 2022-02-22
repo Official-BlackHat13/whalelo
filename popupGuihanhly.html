@@ -20,13 +20,14 @@
 
 <body>
     <!-- start body -->
-    <div class="popup">
-        <div class="popup__bg" data-close>
+    <div id="popup1" class="popup">
+        <div class="popup__wrap">
+            <div class="popup__bg" data-close-popup></div>
             <div class="popup__content lg">
                 <div class="popup__baggage--form">
                     <div class="popup-input">
                         <h3 class="popup-title">Chọn địa chỉ gửi hành lý
-                            <a href=""><i class="make fa-solid fa-xmark"></i></a>
+                            <a href="" data-close-popup><i class="make fa-solid fa-xmark"></i></a>
                         </h3>
                         <form action="">
                             <input type="text" name="address" placeholder="Nhập địa chỉ của bạn">
@@ -494,7 +495,9 @@
             </div>
         </div>
     </div>
-
+    <button data-target="#popup1" class="btn btn-success showpopup">
+        show popup
+    </button>
     <!-- end body -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"

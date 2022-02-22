@@ -15,8 +15,9 @@
 </head>
 <body>
     <!-- start body -->
-    <div class="popup">
-        <div class="popup__bg" data-close>
+    <div id="popup1" class="popup">
+        <div class="popup__wrap" >
+            <div class="popup__bg" data-close-popup></div>
             <div class="popup__content sm">
                 <div class="popup__content--inner">
                     <div class="progress custom active">
@@ -71,6 +72,9 @@
         </div>
     </div>
 
+    <button data-target="#popup1" class="btn btn-success showpopup">
+        show popup
+    </button>
     <!-- end body -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
