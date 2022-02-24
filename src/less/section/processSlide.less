@@ -155,9 +155,28 @@
         p{
             font-weight: 500;
             font-size: 36px;
-            line-height: 43px;
             color: #000000;
             margin-bottom: 0px;
         }
+    }
+}
+
+@media(max-width:768px){
+    .work__content--lists::before{
+        content: "";
+        background: none;
+    }
+    .work__content--lists{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 45px;
+    }
+    .work__pagination--page{
+        p{
+            font-size: 24px;
+        }
+    }
+    .work__pagination--select .select{
+        width: 300px;
     }
 }
